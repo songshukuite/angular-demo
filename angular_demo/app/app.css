@@ -4,12 +4,12 @@ html {
 }
 body {
   height: 100%;
-  font-size: 0.4rem !important;
+  font-size: 0.4rem;
 }
 ul {
   list-style-type: none;
 }
-ul, li {
+ul, li, h3, p {
   margin: 0;
   padding: 0;
 }
@@ -176,33 +176,145 @@ header .minus {
   left: 0;
   bottom: 0;
   overflow: hidden;
+  box-sizing: border-box;
   
   width: 100%;
-  height: 2rem;
-  
-  border-top: 1px solid #ccc;
+  height: 1.4rem;
+  background-color: #fff;
 }
 .menu li {
   float: left;
   box-sizing: border-box;
   
   width: 25%;
-  height: 2rem;
+  height: 1.4rem;
   
   text-align: center;
-  line-height: 1rem;
-  font-size: 0.6rem;
-  border-right: 1px solid #ccc;
-}
-.menu li:last-of-type {
-  border-right: none;
+  line-height: 0.6rem;
+  font-size: 0.4rem;
 }
 .menu li span {
   display: block;
   
-  width: 1rem;
-  height: 1rem;
-  margin: 0 auto;
+  width: 0.6rem;
+  height: 0.6rem;
+  margin: 0.1rem auto;
+}
+.menu .tuijian {
+  background: url(images/tuijian.jpg) left top no-repeat;
+  background-size: contain;
+}
+.menu .zhibo {
+  background: url(images/zhibohover.jpg) left top no-repeat;
+  background-size: contain;
+}
+.menu .zhuanti {
+  background: url(images/zhuantihover.jpg) left top no-repeat;
+  background-size: contain;
+}
+.menu .my {
+  background: url(images/myhover.jpg) left top no-repeat;
+  background-size: contain;
+}
+/* view1 */
+.banner-wrapper {
+  height: 5.4rem;
+}
+.banner-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.middle-bar {
+  overflow: hidden;
   
-  background-color: yellow;
+  height: 0.8rem;
+  margin: 0.2rem 0;
+  padding: 0 0.2rem;
+  line-height: 0.8rem;
+  font-size: 0.4rem;
+  color: #787878;
+  border-bottom: 1px solid #787878;
+  border-top: 1px solid #787878;
+}
+.middle-bar div {
+  float: right;
+  
+  width: 1rem;
+  height: 0.4rem;
+}
+.middle-bar div img {
+  width: 0.8rem;
+  height: 0.4rem;
+}
+.item {
+  height: 1.4rem;
+  
+  margin: 0 0.2rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #787878;
+}
+.item .pic {
+  width: 1.4rem;
+  height: 1.4rem;
+  padding: 0.05rem;
+  border: 1px solid #787878;
+}
+.item .pic img {
+  width: 100%;
+  height: 100%;
+}
+.item .info {
+  position: relative;
+  height: 1.4rem;
+  padding-left: 0.2rem;
+  padding-right: 1rem;
+}
+.item .info h3 {
+  font-size: 0.4rem;
+}
+.item .info p {
+  line-height: 0.5rem;;
+  font-size: 0.4rem;
+  color: #787878;
+}
+.info div {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  
+  width: 0.8rem;
+  height: 0.6rem;
+}
+.info div img {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.advertise {
+  padding: 0.2rem 0;
+}
+.advertise img {
+  width: 100%;
+  height: auto;
+}
+/* view2 */
+.zhibo-page img {
+  width: 100%;
+  height: auto;
+}
+/* view3 */
+.zhuanti-page {
+  padding: 0.2rem;
+}
+.zhuanti-wrapper {
+  padding: 0.2rem;
+}
+.zhuanti-wrapper img {
+  width: 2.8rem;
+  height: auto;
+  padding-right: 0.5rem;
+}
+/* view4 */
+.my-account img {
+  width: 100%;
+  height: auto;
 }
