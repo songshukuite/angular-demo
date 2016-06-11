@@ -20,7 +20,7 @@
     function responseFunc(){
       var h_element = document.getElementsByTagName("html")[0];
 
-      h_element.style.fontSize = document.documentElement.clientWidth/10 + "px";
+      h_element.style.fontSize = document.documentElement.clientWidth/10.8 + "px";
       console.log(document.documentElement.clientWidth);
       console.log(h_element.style.fontSize);
     }
@@ -28,8 +28,8 @@
 </head>
 <body ng-controller="MainCtrl"  ng-swipe-left="onSwipeLeft()"   ng-swipe-right="onSwipeRight()" ng-click="sidebarHide($event)">
   <header>
-    <div class="add" ng-click="leftSidebarShow($event)">+</div>
-    <div class="minus" ng-click="rightSidebarShow($event)">-</div>
+    <div class="add" ng-click="leftSidebarShow($event)"></div>
+    <div class="minus" ng-click="rightSidebarShow($event)"></div>
     新浪新闻
   </header>
   <ul id="left-sidebar" ng-show="leftBarBool" ng-cloak>
